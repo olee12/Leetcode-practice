@@ -1,10 +1,10 @@
-#include "bits/stdc++.h"
+#include <bits/stdc++.h>
 using namespace std;
 
 
 class Solution {
 public:
-    vector<vector<int>> fourSum(vector<int>& ara, int target) {
+    vector<vector<int> > fourSum(vector<int>& ara, int target) {
         std::vector<std::vector<int> > ret;
         sort( ara.begin(),ara.end() );
         int len = ara.size();
@@ -44,6 +44,7 @@ int main()
 {	
 	Solution ret;
 	std::vector<int> v;
+	printf("%d\n",12);
 	v.push_back(-3);
 	v.push_back(-3);
 	v.push_back(-2);
