@@ -50,6 +50,10 @@
         "typeindex": "cpp",
         "typeinfo": "cpp",
         "utility": "cpp",
-        "valarray": "cpp"
-    }
+        "valarray": "cpp",
+        "map": "cpp",
+        "random": "cpp",
+        "unordered_map": "cpp"
+    },
+    "clang.cxxflags": ["-std=c++11"]
 }
