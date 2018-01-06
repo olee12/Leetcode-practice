@@ -28,6 +28,33 @@ class Solution
         }
         return head;
     }
+
+       ListNode* rec(ListNode *head){
+        if(head == NULL || head->next == NULL) return head;
+        
+        ListNode *n = head->next;
+        head->next = rec(head->next->next);
+        n->next = head;
+        return n;
+        
+    }
+    
+    ListNode* inPlaceSwap(ListNode *head){
+        ListNode** cur = &head;
+        while((*cur) && (*cur)->next){
+            ListNode *a = *(cur);
+            ListNode *b = (*cur)->next;
+            
+            a->next = b->next;
+            b->next = a;
+            
+            *cur = b;
+            cur = &(a->next);
+            
+            
+        }
+        return head;
+    }
 };
 
 int main()
