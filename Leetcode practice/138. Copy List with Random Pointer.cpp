@@ -28,7 +28,7 @@ class Solution
         RandomListNode *start = tmp;
 
         while(ptr!=NULL) {
-            dict[ptr]->next = ptr->next;
+          //  dict[ptr]->next = ptr->next;
             if(ptr->random != NULL)
                 dict[ptr]->random = dict[ptr->random];
             tmp->next = dict[ptr];
