@@ -1,4 +1,8 @@
 .output
 .vscode
-leet-code-java.iml
+leet-code-java/target
+leet-code-java/.idea
+leet-code-java/leet-code-java.iml
+leet-code-java/.settings
+python/learning/__pycache__/
 
