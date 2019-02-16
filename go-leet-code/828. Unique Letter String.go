@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func uniqueLetterString(str string) int {
 	// create the index array
 	index := make([][]int, 26)
@@ -35,9 +33,4 @@ func uniqueLetterString(str string) int {
 
 	return ret
 
-}
-
-func main() {
-	str := "ABCDCAC"
-	fmt.Println(uniqueLetterString(str))
 }

@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 func top(stack []int) int {
 	return stack[len(stack)-1]
 }
@@ -40,9 +36,4 @@ func largestRectangleArea(heights []int) int {
 		st = append(st, i)
 	}
 	return mx
-}
-
-func main() {
-	var arr = []int{2, 2, 2}
-	fmt.Println(largestRectangleArea(arr))
 }

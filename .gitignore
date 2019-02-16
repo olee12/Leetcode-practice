@@ -1,5 +1,6 @@
 .output
 .vscode
+.idea
 leet-code-java/target
 leet-code-java/.idea
 leet-code-java/leet-code-java.iml
