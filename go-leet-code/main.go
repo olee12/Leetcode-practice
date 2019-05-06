@@ -3,11 +3,21 @@ package main
 import "fmt"
 
 func main() {
-	// wordlist := []string{"KiTe", "kite", "hare", "Hare"}
-	// queries := []string{"kite", "Kite", "KiTe", "Hare", "HARE", "Hear", "hear", "keti", "keet", "keto"}
-	// output := []string{"kite", "KiTe", "KiTe", "Hare", "hare", "", "", "KiTe", "", "KiTe"}
+	head := &ListNode{Val: 1}
+	node := head
 
-	nums := []int{1, 1, 1, 1, 1}
-
-	fmt.Println(findTargetSumWays(nums, 3))
+	node.Next = &ListNode{Val: 1}
+	node = node.Next
+	node.Next = &ListNode{Val: 2}
+	node = node.Next
+	// fmt.Println("olee", node.Val)
+	node.Next = &ListNode{Val: 3}
+	node = node.Next
+	node.Next = &ListNode{Val: 3}
+	nHead := deleteDuplicates(head)
+	// nHead := head
+	for nHead != nil {
+		fmt.Println(nHead.Val)
+		nHead = nHead.Next
+	}
 }

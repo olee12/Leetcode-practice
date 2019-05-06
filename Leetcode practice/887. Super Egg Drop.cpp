@@ -2,6 +2,7 @@
 #include <vector> 
 #include <map>
 #include <algorithm>
+#include <string.h>
 using namespace std;
 
 const int maxn = 10001;
