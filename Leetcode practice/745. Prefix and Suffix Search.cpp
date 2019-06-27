@@ -33,16 +33,9 @@ public:
                     if((*tree)[ch] == NULL) {
                         (*tree)[ch] = new TrieNode();
                     }
-                    
-                        // if(tree->next[ch]!=NULL){
-                        //     printf("[%x]",tree->next[ch]);
-                        // }
-                    
-
                     tree = (*tree)[ch];
                     tree->w = i;
                 }
-                // printf("\n");
             }
         }
     }
@@ -52,10 +45,6 @@ public:
         TrieNode *tree = root;
         for(int i = 0;i<word.size();i++){
             int ch = word[i] - 'a';
-            // printf("%c~",ch+97);
-            // if(tree->next[ch]!=NULL){
-            //                 printf("[%x]",tree->next[ch]);
-            //             }
             if((*tree)[ch]==NULL) return -1;
             tree = (*tree)[ch];
         }
