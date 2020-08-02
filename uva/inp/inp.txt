@@ -1,0 +1,21 @@
+"The Canterbury Tales" by Chaucer, G.
+"Algorithms" by Sedgewick, R.
+"The C Programming Language" by Kernighan, B. and Ritchie, D.
+"AA" by Olee
+"AB" by Olee
+"AC" by Ontu
+END
+BORROW "Algorithms"
+BORROW "The C Programming Language"
+RETURN "Algorithms"
+RETURN "The C Programming Language"
+SHELVE
+BORROW "AB"
+BORROW "AA"
+SHELVE
+RETURN "AB"
+BORROW "AB"
+SHELVE
+RETURN "AA"
+SHELVE
+END
