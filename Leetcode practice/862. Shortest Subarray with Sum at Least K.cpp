@@ -37,6 +37,7 @@ int main() {
     q.push({10, 8});
     q.push({15, 10});
     q.push({9,4});
+    q.push({9,2});
     while (q.size()) {
         printf("\n top : %d %d\n", q.top().first, q.top().second);
         q.pop();
